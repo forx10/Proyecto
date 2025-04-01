@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Actividad Pendiente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #fcd1a3;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: rgb(0, 0, 0);
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            padding: 30px;
+            text-align: left;
+        }
+        .content h1 {
+            color: #000000;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            color: #000000;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .content ul li {
+            background-color: #f7f7f7;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .content ul li strong {
+            color: #000000;
+        }
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100%;
+                margin: 0;
+                border-radius: 0;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Nueva Actividad Pendiente</h1>
+        </div>
+        <div class="content">
+            <h1>Hola {{ usuario.first_name }},</h1>
+            <p>Se te ha asignado una nueva actividad pendiente. A continuación, encontrarás los detalles:</p>
+            <ul>
+                <li><strong>Actividad:</strong> {{ actividad.nombre_actividad }}</li>
+                <li><strong>Descripción:</strong> {{ actividad.descripcion }}</li>
+                <li><strong>Fecha límite:</strong> {{ actividad.fecha_vencimiento }}</li>
+                <li><strong>Plantación:</strong> {{ actividad.plantacion.nombre }}</li>
+
+            </ul>
+            <p>No olvides completarla a tiempo. ¡Buena suerte!</p>
+        </div>
+       
+    </div>
+</body>
+</html>

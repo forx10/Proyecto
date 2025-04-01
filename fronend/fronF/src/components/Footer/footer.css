@@ -1,0 +1,42 @@
+footer {
+    min-width: 100%;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, #f4b183, #f8d8a8);
+    position: relative;
+
+  }
+  
+  footer .social-icons a {
+    color: #4b2215;
+    text-decoration: none; /* Elimina subrayado */
+    font-family: 'Montserrat', sans-serif; 
+  }
+  
+  footer .social-icons a:hover {
+    text-decoration: underline; /* Subraya los enlaces cuando el mouse pasa sobre ellos */
+  }
+  
+  footer .social-icons {
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: inherit; /* Hereda el color del padre */
+  }
+  
+  footer a:hover {
+    color: #6b3929; /* Color de texto para los enlaces */
+  }
+
+  .footer-brand {
+    color: #4b2215;
+    font-weight: bold; /* Hace el texto más destacado */
+    margin-top:10px;
+    font-family: 'Montserrat', sans-serif; 
+  }
+  

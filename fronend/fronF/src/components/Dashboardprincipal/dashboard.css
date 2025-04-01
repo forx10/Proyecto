@@ -1,0 +1,125 @@
+/* Asegúrate de que el contenedor principal ocupe toda la altura de la pantalla */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  min-width: 100%;
+  
+  
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-container {
+  flex-shrink: 0; /* Evita que el footer se encoja */
+}
+
+/* Contenedor principal de dos mitades */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+/* Para pantallas pequeñas */
+.single-screen {
+  background-color: #f8d8a8
+}
+
+.single-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.full-screen-content {
+  text-align: center;
+  color: white;
+}
+
+
+/* Mitad izquierda (Color sólido) */
+.left-side {
+  width: 50%;
+  background-color: #ffae6293; /* Rojo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Mitad derecha (Imagen con efecto borroso en el fondo) */
+.right-side {
+  width: 50%;
+  position: relative; /* Permite agregar la capa de desenfoque */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden; /* Evita desbordes */
+}
+
+/* Capa con la imagen borrosa */
+.right-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imagenes/fresas.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Aplica el desenfoque a la imagen */
+  z-index: -1; /* Envía la imagen desenfocada al fondo */
+}
+
+
+/* Ajustes para el formulario */
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 50%;
+}
+
+
+/* Alineación de la ilustración y la frase a la izquierda */
+.illustration-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen y la frase */
+  margin-left: 30%; /* Mueve el contenedor más a la izquierda */
+  margin-right: 5%; /* Agrega espacio a la derecha del contenedor de ilustración */
+  width: 700%;
+  min-height: 400px;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+
+.img-fluid {
+  min-width:  90%;
+
+}
+
+/* Contenedor principal de dos mitades */
+
+
+/* Ajustes para el formulario */
+.login-container {
+  max-width: 300px; /* Tamaño máximo del formulario */
+  width: auto; /* Ancho flexible */
+  padding: 15px 20px; /* Menos padding para reducir tamaño */
+  border-radius: 10px;
+ 
+}

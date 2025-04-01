@@ -1,0 +1,35 @@
+.container_body {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(252, 234, 208), rgb(255, 222, 199));
+}
+
+
+.fc-button {
+    background-color: #fad885 ;
+    border-color: #fad885 !important;
+    color: #4b2215 !important; /* Color del texto */
+  }
+  
+  .fc-button:hover {
+    background-color: #f7c75c !important;
+    border-color: #f7c75c !important;
+  }
+  
+  .fc-button-primary {
+    background-color: #fad885 !important;
+    border-color: #fad885 !important;
+    
+  }
+  
+  .fc-toolbar-chunk .fc-button {
+    background-color: #fad885 !important;
+  };
+
+.footerContainer {
+    text-align: center;
+    margin-top: auto;
+    height: 100%;
+}
