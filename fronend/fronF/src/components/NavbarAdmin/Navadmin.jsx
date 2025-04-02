@@ -200,8 +200,8 @@ function Navbaradmin() {
     }
 
     const empleadoMatch = normalizedCommand.match(/apolo cuántas (?:tareas|actividades) tiene (\w+)/i) || 
-                         normalizedCommand.match(/cuántas (?:tareas|actividades) tiene (\w+)/i) || 
-                          normalizedCommand.match(/apolo cuáles (?:tareas|actividades) tiene (\w+)/i);
+                          normalizedCommand.match(/cuántas (?:tareas|actividades) tiene (\w+)/i) || 
+                          normalizedCommand.match(/cuáles son las (?:tareas|actividades) de (\w+)/i);
     if (empleadoMatch) {
       const nombreEmpleado = empleadoMatch[1];
       if (nombreEmpleado) {

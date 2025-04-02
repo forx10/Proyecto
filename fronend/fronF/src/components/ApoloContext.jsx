@@ -44,7 +44,7 @@ export const ApoloProvider = ({ children }) => {
       console.error('Error en síntesis de voz:', e);
       setTimeout(() => {
         window.speechSynthesis.speak(utterance);
-      }, 300);
+      }, 300); // si hay error intenta hablar denuevo despues de 300 ms
     };
   
     setTimeout(() => {
@@ -69,9 +69,9 @@ export const ApoloProvider = ({ children }) => {
       sessionStorage.setItem("apoloHasListeningGreeted", "true");
     }
   };
-
+//Retorno del Proveedor de Contexto
   return (
-    <ApoloContext.Provider value={{ 
+    <ApoloContext.Provider value={{  // contexto global
       hasGreeted, 
       greet, 
       speak, 
